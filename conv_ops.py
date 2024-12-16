@@ -56,8 +56,8 @@ else:
 
 # script below
 c_out = n_filt
-h_out = (h_in + 2*p - h_filt)/s + 1
-w_out = (w_in + 2*p - w_filt)/s + 1
+h_out = int((h_in + 2*p - h_filt)/s + 1)
+w_out = int((w_in + 2*p - w_filt)/s + 1)
 muls  = n_filt*h_out*w_out*c_in*h_filt*w_filt
 adds  = n_filt*h_out*w_out*c_in*h_filt*w_filt
 divs  = 0
